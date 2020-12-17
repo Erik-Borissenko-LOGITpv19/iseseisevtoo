@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iseseisevtoo.MainPage">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Gray">
+        <Entry Placeholder="Почта" x:Name="EntryRecipients" TextColor="Black"></Entry>
+        <Entry Placeholder="Тема" x:Name="EntrySubject" TextColor="Black"></Entry>
+        <Entry Placeholder="Текст" x:Name="EntryBody" TextColor="Black"></Entry>
+        <Button Text="Отправить" x:Name="ButtonSend" Clicked="ButtonSend_Clicked" BackgroundColor="LightGreen"></Button>
+    </StackLayout>
+</ContentPage>
