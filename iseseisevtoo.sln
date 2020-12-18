@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iseseisevtoo.Android", "iseseisevtoo\iseseisevtoo.Android\iseseisevtoo.Android.csproj", "{D81DAABB-F02B-48FE-8FB0-31F6FBE8EAC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iseseisevtoo", "iseseisevtoo\iseseisevtoo\iseseisevtoo.csproj", "{AAC922CA-7991-483E-B68E-3D0F6514B650}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iseseisevtoo", "iseseisevtoo\iseseisevtoo\iseseisevtoo.csproj", "{AAC922CA-7991-483E-B68E-3D0F6514B650}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DB59A084-F300-455F-B718-F6035CEFF628}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,7 +6,7 @@
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Gray">
         <Entry Placeholder="Почта" x:Name="EntryRecipients" TextColor="Black"></Entry>
         <Entry Placeholder="Тема" x:Name="EntrySubject" TextColor="Black"></Entry>
-        <Entry Placeholder="Текст" x:Name="EntryBody" TextColor="Black"></Entry>
-        <Button Text="Отправить" x:Name="ButtonSend" Clicked="ButtonSend_Clicked" BackgroundColor="LightGreen"></Button>
+        <Entry Placeholder="Выбери поздравления для друга!" x:Name="EntryBody" TextColor="Black"></Entry>
+        <Button Text="Поздравить" x:Name="ButtonSend" Clicked="ButtonSend_Clicked" BackgroundColor="LightGreen"></Button>
     </StackLayout>
 </ContentPage>
