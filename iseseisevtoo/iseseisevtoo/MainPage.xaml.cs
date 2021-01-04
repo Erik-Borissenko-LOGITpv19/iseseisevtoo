@@ -71,7 +71,8 @@ namespace iseseisevtoo
         //Рандомно сгенерированое число--------------------------
         private void randombutton_Clicked(object sender, EventArgs e)
         {
-                
+            pick.SelectedIndex = rnd.Next(0, 4);
         }
+
     }
 }
