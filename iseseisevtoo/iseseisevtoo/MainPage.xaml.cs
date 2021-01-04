@@ -37,11 +37,11 @@ namespace iseseisevtoo
             pick.Items.Add("tytpo4tapodrygi@mail.ru");
             pick.Items.Add("tytpo4taznakomogo@mail.ru");
             pick.Items.Add("tytpo4taznakomoi@mail.ru");
+            Content = new StackLayout();
         }
         //Random
         private void Rndbutton_Clicked(object sender, EventArgs e)
         {
-            rnd = new Random();
             int r = rnd.Next(0, 4);
         }
 
@@ -71,8 +71,8 @@ namespace iseseisevtoo
         //Рандомно сгенерированое число--------------------------
         private void randombutton_Clicked(object sender, EventArgs e)
         {
+            rnd = new Random();
             pick.SelectedIndex = rnd.Next(0, 4);
         }
-
     }
 }
