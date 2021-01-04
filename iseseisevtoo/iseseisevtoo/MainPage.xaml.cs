@@ -15,10 +15,15 @@ namespace iseseisevtoo
         Label lbl;
         Picker pick;
         TimePicker time1;
+        Random rnd;
+        Button rndbutton;
         public MainPage()
         {
             InitializeComponent();
             BackgroundColor = Color.LightSkyBlue;
+            //Кнопка Рандома
+            rndbutton = new Button { Text = "Разукрась или верни" };
+            rndbutton.Clicked += Rndbutton_Clicked;
             //Time----------------------------------------------
             time1 = new TimePicker
             {
@@ -26,12 +31,18 @@ namespace iseseisevtoo
             };
             time1.PropertyChanged += Time_PropertyChanged;
             //Picker--------------------------------------------
-            pick.Title = "Выбери поздравления другу!";
-            pick.Items.Add("C Новым годом");
-            pick.Items.Add("С НГ");
-            pick.Items.Add("Ну братан... С новым годом!");
-            pick.Items.Add("А тут у нас НГ");
-            pick.Items.Add("Ну подруга... С новым годом!");
+            pick = new Picker();
+            pick.Items.Add("tytpo4ta@mail.ru");
+            pick.Items.Add("tytpo4tadryga@mail.ru");
+            pick.Items.Add("tytpo4tapodrygi@mail.ru");
+            pick.Items.Add("tytpo4taznakomogo@mail.ru");
+            pick.Items.Add("tytpo4taznakomoi@mail.ru");
+        }
+        //Random
+        private void Rndbutton_Clicked(object sender, EventArgs e)
+        {
+            rnd = new Random();
+            int r = rnd.Next(0, 4);
         }
 
         private void ButtonSend_Clicked(object sender, EventArgs e)
@@ -40,7 +51,7 @@ namespace iseseisevtoo
             var emailMessenger = CrossMessaging.Current.EmailMessenger;
             if (emailMessenger.CanSendEmail)
             {
-                emailMessenger.SendEmail($"{EntryRecipients}", $"{EntrySubject}", $"{pick}");
+                emailMessenger.SendEmail($"{pick}", $"{EntrySubject}", $"{EntryRecipients}");
             }
             ButtonSend.Text = "Отправлено!";
         }
@@ -56,6 +67,11 @@ namespace iseseisevtoo
                     lbl.TextColor = Color.Black;
                 }
             }
+        }
+        //Рандомно сгенерированое число--------------------------
+        private void randombutton_Clicked(object sender, EventArgs e)
+        {
+                
         }
     }
 }

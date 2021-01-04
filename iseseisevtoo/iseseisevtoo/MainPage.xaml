@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="iseseisevtoo.MainPage">
+             x:Class="iseseisevtoo.MainPage" BackgroundColor="LightSkyBlue">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Gray">
-        <Entry Placeholder="Почта" x:Name="EntryRecipients" TextColor="Black"></Entry>
-        <Entry Placeholder="Тема" x:Name="EntrySubject" TextColor="Black"></Entry>
-        <Entry Placeholder="Выбери поздравления для друга!" x:Name="EntryBody" TextColor="Black"></Entry>
+        <Entry Placeholder="Выбери почту" x:Name="EntryRecipients" TextColor="Black"></Entry>
+        <Entry Placeholder="Напиши тему другу" x:Name="EntrySubject" TextColor="Black"></Entry>
+        <Entry Placeholder="Нажми на кнопку рандом" x:Name="EntryBody" TextColor="Black"></Entry>
         <Button Text="Поздравить" x:Name="ButtonSend" Clicked="ButtonSend_Clicked" BackgroundColor="LightGreen"></Button>
+        <Button Text="Рандомное сообщение или выбери сообщение сам" x:Name="randombutton" Clicked="randombutton_Clicked" BackgroundColor="LightGreen"></Button>
     </StackLayout>
 </ContentPage>
